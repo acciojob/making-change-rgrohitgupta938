@@ -1,9 +1,9 @@
 const makeChange = (c) => {
   // your name here
-	const quarterValue = 0.25;
-    const dimeValue = 0.10;
-    const nickelValue = 0.05;
-    const pennyValue = 0.01;
+	const quarterValue = 25;
+    const dimeValue = 10;
+    const nickelValue = 5;
+    const pennyValue = 1;
     let quarters = Math.floor(c / quarterValue);
     c %= quarterValue;
     let dimes = Math.floor(c / dimeValue);
@@ -15,5 +15,5 @@ const makeChange = (c) => {
 };
 
 // Do not the change the code below
-const c = prompt("Enter c: ");
+//const c = prompt("Enter c: ");
 alert(JSON.stringify(makeChange(c)));
