@@ -4,13 +4,13 @@ const makeChange = (c) => {
     const dimeValue = 0.10;
     const nickelValue = 0.05;
     const pennyValue = 0.01;
-    let quarters = Math.floor(amount / quarterValue);
-    amount %= quarterValue;
-    let dimes = Math.floor(amount / dimeValue);
-    amount %= dimeValue;
-    let nickels = Math.floor(amount / nickelValue);
-    amount %= nickelValue;
-    let pennies = Math.round(amount / pennyValue);
+    let quarters = Math.floor(c / quarterValue);
+    c %= quarterValue;
+    let dimes = Math.floor(c / dimeValue);
+    c %= dimeValue;
+    let nickels = Math.floor(c / nickelValue);
+    c %= nickelValue;
+    let pennies = Math.round(c / pennyValue);
     return { q: quarters, d: dimes, n: nickels, p: pennies };
 };
 
