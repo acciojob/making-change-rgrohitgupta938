@@ -10,7 +10,7 @@ const makeChange = (c) => {
     c %= dimeValue;
     let nickels = Math.floor(c / nickelValue);
     c %= nickelValue;
-    let pennies = Math.round(c / pennyValue);
+    let pennies = c
     return { q: quarters, d: dimes, n: nickels, p: pennies };
 };
 
